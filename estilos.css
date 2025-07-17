@@ -1,51 +1,65 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #fff0f5;
+  color: #333;
+  text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
 h1 {
-  text-align: center;
-  color: #c71585;
+  background-color: #ffd6e8;
+  padding: 20px;
+  margin-bottom: 0;
 }
 
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .semestre {
-  background-color: var(--color);
-  padding: 15px;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.semestre h2 {
-  text-align: center;
-  color: #8b0000;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
 }
 
 .ramo {
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
+  background-color: #f9dbe5;
   margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  border: 2px solid #d3d3d3;
-  transition: background-color 0.3s ease, border 0.3s ease;
+  transition: all 0.3s;
+  border: 1px solid #ccc;
+}
+
+.ramo:hover {
+  background-color: #f8b6cc;
 }
 
 .ramo.aprobado {
-  background-color: #b0f2c2;
-  border-color: #5cb85c;
+  background-color: #b9f6ca;
+  text-decoration: line-through;
 }
 
 .ramo.bloqueado {
-  opacity: 0.5;
-  pointer-events: none;
+  background-color: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
 }
+
+/* Colores pastel por semestre */
+.s1 { background-color: #ffe6f0; }
+.s2 { background-color: #ffe6f0; }
+.s3 { background-color: #ffe0ec; }
+.s4 { background-color: #ffd6e8; }
+.s5 { background-color: #ffccdf; }
+.s6 { background-color: #ffbcd6; }
+.s7 { background-color: #ffabcc; }
+.s8 { background-color: #ffa0c2; }
+.s9 { background-color: #f790b0; }
+.s10 { background-color: #f47da0; }
