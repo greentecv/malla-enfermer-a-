@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Malla Interactiva Enfermería</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva de Enfermería</h1>
+  <div class="malla">
+    <!-- Semestres -->
+    <!-- Semestre I -->
+    <div class="semestre">
+      <h2>Semestre I</h2>
+      <div class="ramo" id="quimica" onclick="toggleRamo('quimica')">
+        <p>Química (ENF3000) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="biologia" onclick="toggleRamo('biologia')">
+        <p>Biología (ENF3001) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="bases1" onclick="toggleRamo('bases1')">
+        <p>Bases Teóricas I (ENF3002) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="psicologiaI" onclick="toggleRamo('psicologiaI')">
+        <p>Psicología Evolutiva (ENF3004) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="inglesI" onclick="toggleRamo('inglesI')">
+        <p>Inglés I • 5 cr.</p>
+      </div>
+      <div class="ramo" id="cfgI" onclick="toggleRamo('cfgI')">
+        <p>CFG I • 5 cr.</p>
+      </div>
+    </div>
+    <!-- Semestre II -->
+    <div class="semestre">
+      <h2>Semestre II</h2>
+      <div class="ramo" id="bioquimica" onclick="toggleRamo('bioquimica')">
+        <p>Bioquímica (ENF3005) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="morfofuncionI" onclick="toggleRamo('morfofuncionI')">
+        <p>Morfofunción I (ENF3006) • 8 cr.</p>
+      </div>
+      <div class="ramo" id="bases2" onclick="toggleRamo('bases2')">
+        <p>Bases Teóricas II (ENF3007) • 5 cr.</p>
+      </div>
+      <div class="ramo" id="comunicacion" onclick="toggleRamo('comunicacion')">
+        <p>Comunicación y Educación en Salud (ENF3008) • 3 cr.</p>
+      </div>
+      <div class="ramo" id="inglesII" onclick="toggleRamo('inglesII')">
+        <p>Inglés II • 5 cr.</p>
+      </div>
+      <div class="ramo" id="cfgII" onclick="toggleRamo('cfgII')">
+        <p>CFG II • 5 cr.</p>
+      </div>
+    </div>
+    <!-- ... Semestres III a X aquí ... -->
+  </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
