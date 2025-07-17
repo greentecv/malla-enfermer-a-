@@ -2,59 +2,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Malla Interactiva Enfermería</title>
+  <title>Malla Interactiva de Enfermería</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla Interactiva de Enfermería</h1>
-  <div class="malla">
-    <!-- Semestres -->
+  <h1>Malla Curricular - Enfermería</h1>
+  <div class="contenedor">
+    <!-- SEMESTRES -->
+    <!-- Cada semestre en una fila -->
+    <!-- Cada ramo es un div con clase "ramo" y un id único -->
+    <!-- Añadir según estructura en script.js -->
+
     <!-- Semestre I -->
-    <div class="semestre">
+    <div class="semestre s1">
       <h2>Semestre I</h2>
-      <div class="ramo" id="quimica" onclick="toggleRamo('quimica')">
-        <p>Química (ENF3000) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="biologia" onclick="toggleRamo('biologia')">
-        <p>Biología (ENF3001) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="bases1" onclick="toggleRamo('bases1')">
-        <p>Bases Teóricas I (ENF3002) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="psicologiaI" onclick="toggleRamo('psicologiaI')">
-        <p>Psicología Evolutiva (ENF3004) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="inglesI" onclick="toggleRamo('inglesI')">
-        <p>Inglés I • 5 cr.</p>
-      </div>
-      <div class="ramo" id="cfgI" onclick="toggleRamo('cfgI')">
-        <p>CFG I • 5 cr.</p>
-      </div>
+      <div class="ramo" id="ENF3000">Química</div>
+      <div class="ramo" id="ENF3001">Biología</div>
+      <div class="ramo" id="ENF3002">Bases Teóricas I</div>
+      <div class="ramo" id="ENF3003">Primeros Auxilios</div>
+      <div class="ramo" id="ENF3004">Psicología Evolutiva</div>
+      <div class="ramo" id="INGLES1">Inglés I</div>
     </div>
+
     <!-- Semestre II -->
-    <div class="semestre">
+    <div class="semestre s2">
       <h2>Semestre II</h2>
-      <div class="ramo" id="bioquimica" onclick="toggleRamo('bioquimica')">
-        <p>Bioquímica (ENF3005) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="morfofuncionI" onclick="toggleRamo('morfofuncionI')">
-        <p>Morfofunción I (ENF3006) • 8 cr.</p>
-      </div>
-      <div class="ramo" id="bases2" onclick="toggleRamo('bases2')">
-        <p>Bases Teóricas II (ENF3007) • 5 cr.</p>
-      </div>
-      <div class="ramo" id="comunicacion" onclick="toggleRamo('comunicacion')">
-        <p>Comunicación y Educación en Salud (ENF3008) • 3 cr.</p>
-      </div>
-      <div class="ramo" id="inglesII" onclick="toggleRamo('inglesII')">
-        <p>Inglés II • 5 cr.</p>
-      </div>
-      <div class="ramo" id="cfgII" onclick="toggleRamo('cfgII')">
-        <p>CFG II • 5 cr.</p>
-      </div>
+      <div class="ramo" id="ENF3005">Bioquímica</div>
+      <div class="ramo" id="ENF3006">Morfofunción I</div>
+      <div class="ramo" id="ENF3007">Bases Teóricas II</div>
+      <div class="ramo" id="ENF3008">Comunicación y Educación</div>
+      <div class="ramo" id="INGLES2">Inglés II</div>
+      <div class="ramo" id="CFG1">CFG I</div>
     </div>
-    <!-- ... Semestres III a X aquí ... -->
+
+    <!-- Semestres III a X: ver script.js para nombres -->
+    <!-- Continuación automática en JavaScript -->
+
   </div>
 
   <script src="script.js"></script>
