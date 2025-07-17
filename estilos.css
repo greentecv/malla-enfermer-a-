@@ -1,59 +1,51 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffe6f5;
-  color: #333;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
-  color: #cc0066;
+  text-align: center;
+  color: #c71585;
 }
 
-.malla {
+.contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .semestre {
-  border: 2px solid #cc0066;
-  border-radius: 10px;
+  background-color: var(--color);
   padding: 15px;
-  width: 240px;
-  background-color: #fff0f8;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .semestre h2 {
-  margin-top: 0;
-  color: #cc0066;
+  text-align: center;
+  color: #8b0000;
 }
 
 .ramo {
-  background-color: #ffbad2;
-  border: 1px solid #cc0066;
-  border-radius: 5px;
-  margin: 8px 0;
-  padding: 8px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
   cursor: pointer;
-  transition: transform 0.2s;
+  border: 2px solid #d3d3d3;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.ramo:hover {
-  transform: scale(1.02);
+.ramo.aprobado {
+  background-color: #b0f2c2;
+  border-color: #5cb85c;
 }
 
-.ramo.approved {
-  background-color: #ccffcc;
-  border-color: #339933;
-  color: #006600;
-}
-
-.ramo.locked {
-  background-color: #f2f2f2;
-  border-color: #999;
-  color: #aaa;
-  cursor: not-allowed;
+.ramo.bloqueado {
+  opacity: 0.5;
+  pointer-events: none;
 }
