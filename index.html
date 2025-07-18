@@ -1,45 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Malla Interactiva de Enfermería</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular Enfermería</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Malla Curricular - Enfermería</h1>
-  <div class="contenedor">
-    <!-- SEMESTRES -->
-    <!-- Cada semestre en una fila -->
-    <!-- Cada ramo es un div con clase "ramo" y un id único -->
-    <!-- Añadir según estructura en script.js -->
-
-    <!-- Semestre I -->
-    <div class="semestre s1">
-      <h2>Semestre I</h2>
-      <div class="ramo" id="ENF3000">Química</div>
-      <div class="ramo" id="ENF3001">Biología</div>
-      <div class="ramo" id="ENF3002">Bases Teóricas I</div>
-      <div class="ramo" id="ENF3003">Primeros Auxilios</div>
-      <div class="ramo" id="ENF3004">Psicología Evolutiva</div>
-      <div class="ramo" id="INGLES1">Inglés I</div>
-    </div>
-
-    <!-- Semestre II -->
-    <div class="semestre s2">
-      <h2>Semestre II</h2>
-      <div class="ramo" id="ENF3005">Bioquímica</div>
-      <div class="ramo" id="ENF3006">Morfofunción I</div>
-      <div class="ramo" id="ENF3007">Bases Teóricas II</div>
-      <div class="ramo" id="ENF3008">Comunicación y Educación</div>
-      <div class="ramo" id="INGLES2">Inglés II</div>
-      <div class="ramo" id="CFG1">CFG I</div>
-    </div>
-
-    <!-- Semestres III a X: ver script.js para nombres -->
-    <!-- Continuación automática en JavaScript -->
-
-  </div>
-
+  <header>
+    <h1>Malla Curricular - Enfermería</h1>
+    <p>Cada ramo se desbloquea al aprobar sus prerrequisitos. Haz clic sobre un ramo para "aprobarlo".</p>
+    <button onclick="aprobarTodo()">Aprobar Todos (modo demo)</button>
+  </header>
+  <main id="malla"></main>
   <script src="script.js"></script>
 </body>
 </html>
