@@ -1,37 +1,15 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
   margin: 0;
   padding: 0;
-  background-color: #fff0f5;
-  color: #333;
 }
 
 header {
   background-color: #f8cde0;
-  padding: 20px;
+  color: #5e2b45;
   text-align: center;
-  border-bottom: 3px solid #e7a6c3;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2em;
-  color: #702963;
-}
-
-button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-size: 1em;
-  border: none;
-  background-color: #ff9eb5;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e0889c;
+  padding: 20px;
 }
 
 main {
@@ -42,63 +20,45 @@ main {
   gap: 20px;
 }
 
-/* Semestres con diferentes colores pastel */
 .semestre {
+  background-color: #ffe4ec;
+  border: 2px solid #f8cde0;
   border-radius: 10px;
   padding: 10px;
-  width: 260px;
-  background-color: #ffe4ec;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.semestre:nth-child(2n) {
-  background-color: #fbe0f0;
-}
-
-.semestre:nth-child(3n) {
-  background-color: #fbdde9;
-}
-
-.semestre:nth-child(4n) {
-  background-color: #ffe6f2;
-}
-
-.semestre:nth-child(5n) {
-  background-color: #f9dce6;
+  width: 300px;
 }
 
 .semestre h2 {
   text-align: center;
-  color: #b4467d;
-  font-size: 1.2em;
+  color: #a64c6b;
   margin-bottom: 10px;
 }
 
-/* Estilo de los ramos */
 .ramo {
-  background-color: #ffd1e4;
-  border: 1px solid #ecb3cb;
+  background-color: #fce4ec;
+  border: 1px solid #f8bad1;
+  border-radius: 8px;
+  padding: 10px;
   margin: 5px 0;
-  padding: 8px;
-  border-radius: 5px;
   cursor: pointer;
-  text-align: center;
-  transition: transform 0.2s, background-color 0.3s;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.ramo.aprobado {
+  background-color: #d8f3dc;
+  border-color: #a3d9a5;
+  opacity: 1;
+}
+
+.ramo.habilitado {
+  opacity: 1;
 }
 
 .ramo:hover {
   transform: scale(1.02);
 }
 
-.ramo.disabled {
-  background-color: #f3f3f3;
-  color: #aaa;
-  border: 1px dashed #ccc;
+.ramo.inactivo {
   cursor: not-allowed;
-}
-
-.ramo.aprobado {
-  background-color: #b3e5c3;
-  color: #1f5b2e;
-  border: 1px solid #81c784;
 }
